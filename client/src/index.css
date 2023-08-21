@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: normal;
+}
+
+button {
+  box-shadow: none !important;
+  height: 45px !important;
+}
+
+input,
+select,
+textarea {
+  height: 40px !important;
+  width: 100% !important;
+  border: 1px solid #303030 !important;
+  border-radius: 2px !important;
+  padding-left: 10px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none !important;
+  border: 1px solid #303030 !important;
+  box-shadow: none !important;
+}
+
+.search-bar {
+  border: none !important;
+  background-color: lightgray;
+  border-radius: 10px !important;
+  height: 45px !important;
+}
+
+.age-restriction {
+  border: 1px solid #303030 !important;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.search-bar:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+textarea {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  min-height: 100px !important;
+}
+
+a {
+  color: #303030;
+  text-decoration: underline !important;
+}
+
+a:hover {
+  color: #303030;
+}
+
+i {
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+table {
+  border: 1px solid #ccc !important;
+}
+
+.trailer-Button {
+  height: 60px !important;
+}
+
+/* Override Antd style */
+.ant-form-item {
+  margin-bottom: 0px !important;
+}
+
+.ant-form-item-label {
+  padding: 0px !important;
+}
+
+.ant-select-selector {
+  border: 1px solid #303030 !important;
+  border-radius: 2px !important;
+  height: 40px !important;
+}
+
+.ant-select-selector:hover {
+  border: 1px solid #303030 !important;
+  box-shadow: none !important;
+  height: 40px !important;
+}
+
+.ant-select-selector input {
+  height: 40px !important;
+  border: none !important;
+}
+
+.ant-switch {
+  height: 22px !important;
+}
+
+/** Quick Search and Filter */
+
+.search-results {
+  height: 500px;
+  overflow-y: auto;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-color: white;
+  position: absolute;
+  z-index: 100;
+  top: 45px;
+  box-shadow: 1px 1px 2px #ccc;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
