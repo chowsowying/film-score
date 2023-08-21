@@ -65,7 +65,7 @@ const Home = () => {
                 <h1 className="text-lg font-bold">{movie?.name}</h1>
               </div>
               <div className="bg-primary rounded-full p-5 w-10 h-10 flex items-center justify-center text-white">
-                {movie?.rating}
+                <span>{Math.round(movie?.rating * 10) / 10}</span>
               </div>
             </div>
           </div>
