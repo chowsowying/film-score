@@ -135,7 +135,7 @@ const MovieInfo = () => {
                 </div>
               </div>
               <div className="bg-primary rounded-full p-5 w-16 h-16 flex items-center justify-center text-white text-xl gap-1">
-                {movie?.rating}
+                <span>{Math.round(movie?.rating * 10) / 10}</span>
                 <i class="ri-star-fill"></i>
               </div>
             </div>
